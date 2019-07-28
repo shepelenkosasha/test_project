@@ -1,0 +1,118 @@
+.about_us {
+	background-color: $bgGrey;
+
+	.about_us-block {
+		margin-top: 45px;
+		padding-left: 96px;
+		box-shadow: 0 5px 8px 1px rgba(0, 0, 0, 0.1), 0 16px 42px rgba(0, 0, 0, 0.14);
+		background-color: #ffffff;
+
+		&-descr {
+			color: $grey;
+			font-family: "Open Sans";
+			font-size: 14px;
+			font-weight: 400;
+			margin-top: 73px;
+			margin-bottom: 0;
+			letter-spacing: -0.42px;
+		}
+
+		&-text {
+			margin-top: 45px;
+			color: $grey;
+			font-family: "Open Sans";
+			font-size: 16px;
+			font-weight: 700;
+		}
+
+		&-wrapper {
+			display: flex;
+			align-items: center;
+			flex-direction: row;
+			position: relative;
+
+			.wrapper-countryBlock {
+				display: flex;
+				align-items: center;
+				flex-direction: row;
+				margin-top: 20px;
+				margin-right: 35px;
+
+				&:lastchild {
+					margin-right: 0;
+				}
+
+				& img {
+					margin-right: 16px;
+				}
+
+				& p {
+					color: $grey;
+				}
+			}
+		}
+
+		&-buttons {
+			margin-top: 35px;
+			margin-bottom: 65px;
+
+			.about_us-block-button {
+				font-family: "Open Sans";
+				font-size: 20px;
+				font-weight: 700;
+				margin-right: 27px;
+			}
+
+			.about_us-block-link {
+				color: $grey;
+				font-family: "Open Sans";
+				font-size: 16px;
+				font-weight: 600;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.about_us-imgBlock {
+		position: absolute;
+		top: -289px;
+		right: 55px;
+
+		& img {
+			height: 520px;
+		}
+	}
+
+	.we_guarantee-title {
+		text-align: center;
+		margin-top: 59px;
+		margin-bottom: 59px;
+		color: $grey;
+		font-family: "Myriad Pro";
+		font-size: 24px;
+		font-weight: 400;
+	}
+
+	.we_guarantee {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+		&-block {
+			margin-bottom: 76px;
+			& img {
+				margin-right: 6px;
+				vertical-align: middle;
+			}
+			& span {
+				color: $grey;
+				font-family: "Myriad Pro";
+				font-size: 18px;
+				font-weight: 400;
+				vertical-align: middle;
+			}
+		}
+	}
+
+
+}

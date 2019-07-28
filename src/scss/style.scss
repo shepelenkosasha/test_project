@@ -1,0 +1,78 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.main-title {
+	color: #ff5b00;
+	font-family: "Open Sans";
+	font-size: 48px;
+	font-weight: 700;
+	margin: 0 auto;
+	margin-top: 90px;
+	text-align: center;
+}
+
+.orange-link {
+	color: #ff5b00;
+	font-family: "Open Sans";
+	font-size: 16px;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.slide-arrow {
+	margin-top: 25px;
+	display: flex;
+
+	&-left {
+		margin-right: 8px;
+		height: 18px;
+		width: 18px;
+		background: url(../img/howItWork/left-arrow.png) no-repeat center;
+		cursor: pointer;
+		z-index: 10;
+	}
+
+	&-right {
+		height: 18px;
+		width: 18px;
+		background: url(../img/howItWork/right-arrow.png) no-repeat center;
+		cursor: pointer;
+		z-index: 10;
+	}
+}
+
+.slide-arrow-feedback {
+	margin-top: 79px;
+	display: flex;
+
+	&-left {
+		margin-right: 8px;
+		height: 18px;
+		width: 18px;
+		background: url(../img/howItWork/left-arrow.png) no-repeat center;
+		cursor: pointer;
+		z-index: 10;
+	}
+
+	&-right {
+		height: 18px;
+		width: 18px;
+		background: url(../img/howItWork/right-arrow.png) no-repeat center;
+		cursor: pointer;
+		z-index: 10;
+	}
+}
+
+
+@import 'variables';
+@import 'buttons';
+@import 'header';
+@import 'header-slide';
+@import 'aboutUs';
+@import 'services';
+@import 'howItWork';
+@import 'feedback';
+@import 'contacts';
+@import 'footer';

@@ -1,0 +1,101 @@
+.services {
+	&-nav {
+		margin-top: 41px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		list-style: none;
+
+		& li {
+			margin-right: 31px;
+
+			&:lastchild {
+				margin-right: 0;
+			}
+		}
+
+		&-link {
+			color: $grey;
+			font-family: "Open Sans";
+			font-size: 18px;
+			font-weight: 700;
+			text-decoration: none;
+		}
+
+		.active-services-link{
+			color: $orange;
+			font-family: "Open Sans";
+			font-size: 18px;
+			font-weight: 700;
+			text-decoration: none;
+			border-bottom: 2px solid $orange;
+			padding-bottom: 8px;
+		}
+	}
+
+	&-descr {
+		margin-top: 46px;
+
+		&-text {
+			color: #000000;
+			font-family: "Open Sans";
+			font-size: 14px;
+			font-weight: 400;
+		}
+	}
+
+	&-wrapper {
+		margin-top: 60px;
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		grid-gap: 3vw;
+
+		&-block {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			text-align: center;
+
+			.imgBlock {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: #ebebeb;
+				border: 6px solid #ebebeb;
+				border-radius: 50%;
+				height: 96px;
+				width: 96px;
+
+				&:hover {
+					background-color: #fff;
+				}
+
+			}
+
+			& span {
+				margin-top: 32px;
+				color: $grey;
+				font-family: "Open Sans - Semibold";
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 18px;
+
+				&:hover {
+					color: $orange;
+				}
+			}
+		}
+	}
+
+	&-div {
+		text-align: center;
+		margin-top: 76px;
+		margin-bottom: 96px;
+		color: $grey;
+		font-family: "Open Sans";
+		font-size: 16px;
+		font-weight: 700;
+	}
+}

@@ -1,0 +1,76 @@
+.feedback {
+	background-color: $bgGrey;
+	
+	.slider-feedback-wrap {
+
+		.feedback-slider {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 66px;
+			margin-bottom: 128px;
+			height: 404px;
+			padding-left: 98px;
+			background-color: #ffffff;
+			overflow: hidden;
+
+			&-wrapper {
+		
+				.slider-wrap {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					margin-top: 64px;
+
+					.feedback-title {
+						margin: 0;			
+						color: $grey;
+						font-family: "Myriad Pro" !important;
+						font-size: 18px; 
+						font-weight: 700;
+
+						&-descr {
+							color: $grey;
+							font-family: "Myriad Pro";
+							font-size: 16px;
+							font-weight: 400;
+						}
+					}
+
+					.slider-counter {
+						color: #c7c7c7;
+						font-family: "Myriad Pro";
+						font-size: 16px;
+						font-weight: 700;
+
+						& span {
+							color: $grey;
+							font-family: "Myriad Pro";
+							font-size: 16px;
+							font-weight: 700;
+						}
+					}
+				}
+
+				.feedback-slider-star {
+					display: flex;
+					margin-top: 10px;
+				}
+
+				.feedback-slider-p {
+					margin-top: 10px;
+					color: #000000;
+					font-family: "Open Sans";
+					font-size: 13px;
+					font-weight: 400;
+				}
+
+			}
+
+			.feedback-slider-wrapImg {
+				padding-top: 32px;
+				padding-right: 20px;
+				background: linear-gradient(-150deg, #f0f0f0 0%, #ffffff 100%);
+			}
+		}
+	}
+}

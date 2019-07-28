@@ -1,0 +1,131 @@
+.header-slider {
+	background: url(../img/header/header-bg.jpg) center no-repeat;
+
+	.slider {
+		.slide {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin: 0 auto;
+			margin-bottom: 165px;
+			text-align: center;
+
+			&-title{
+				margin-top: 200px;
+				color: #ffffff;
+				font-family: "Open Sans";
+				font-size: 52px;
+				font-weight: 700;
+				line-height: 50px;
+			}
+
+			&-hr {
+				margin-top: 22px;
+				width: 120px;
+				border: 1px solid #ffffff;
+				background-color: #ffffff;
+			}
+
+			&-descr {
+				margin-top: 28px;
+				margin-bottom: 63px;
+				color: #ffffff;
+				font-family: "Myriad Pro";
+				font-size: 16px;
+				font-weight: 400;
+				letter-spacing: 1px;
+
+				span {
+					font-family: "Open Sans";
+					font-weight: 700;
+					letter-spacing: 0.48px;
+				}
+			}
+		}
+	}
+	
+	.nav-container {
+		background-color: rgba(0, 0, 0, .4);
+
+		.header-nav {
+			display: flex;
+			justify-content: space-around;
+			padding-top: 23px;
+			padding-bottom: 21px;
+			list-style: none;
+
+			&-link {
+				color: #ffffff;
+				font-family: "Open Sans - Semibold";
+				font-size: 18px;
+				font-weight: 400;
+				text-decoration: none;
+			}
+		}
+	}
+
+	&-lang {
+		display: flex;
+		flex-direction: column;
+		position: fixed;
+		top: 300px;
+		right: 0;
+
+		.lang-block {
+			display: flex;
+			align-items: center;
+			padding: 10px;
+			background-color: #fff;
+			border-bottom: 1px solid #e2e2e2;
+
+			&-link {
+				display: flex;
+				align-items: center;
+				text-decoration: none;
+				
+				& img{
+					margin-right: 10px;
+				}
+
+				& span {
+					color: $grey;
+					font-family: "Open Sans";
+					font-size: 14px;
+					font-weight: 400;
+
+				}
+			}
+
+			.active-lang-link {
+				& span {
+					color: $orange;
+					font-family: "Open Sans";
+					font-size: 14px;
+					font-weight: 400;
+				}
+			}
+			
+		}
+	}
+	
+}
+
+.slider-arrow {
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	top: 50%;
+	z-index: 10;
+	border-radius: 50%;
+	&-left {
+		left: 0;
+		background: url(../img/arrow-left.png) no-repeat center;
+		cursor: pointer;
+	}
+	&-right {
+		right: 0;
+		background: url(../img/arrow-right.png) no-repeat center;
+		cursor: pointer;
+	}
+}

@@ -1,0 +1,103 @@
+.howItWork {
+	background-color: $bgGrey;
+
+	& h2 {
+		margin-top: 0;
+		padding-top: 90px;
+	}
+	
+	&-wrapper {
+		margin-top: 64px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+		&-slidersBlock {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+
+			&-block {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: #c2c2c2;
+				border: 6px solid #ebebeb;
+				border-radius: 50%;
+				height: 60px;
+				width: 60px;
+			}
+
+			&-descr {
+				margin-top: 25px;
+				color: #010101;
+				font-family: "Open Sans - Semibold";
+				font-size: 14px;
+				font-weight: 400;
+			}
+		}
+	}
+	
+}
+
+.slider-main-wrap {
+
+	.main-slider {
+		display: flex;
+		justify-content: space-between;
+		height: 306px;
+		margin-top: 92px;
+		margin-bottom: 55px;
+		padding-left: 98px;
+		background-color: #ffffff;
+		overflow: hidden;
+
+		&-wrapper {
+	
+			.slider-wrap {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-top: 64px;
+
+				.slider-title {
+					margin: 0;			
+					color: #636363;
+					font-family: "Open Sans";
+					font-size: 22px;
+					font-weight: 700;
+				}
+
+				.slider-counter {
+					color: #c7c7c7;
+					font-family: "Myriad Pro";
+					font-size: 16px;
+					font-weight: 700;
+
+					& span {
+						color: $grey;
+						font-family: "Myriad Pro";
+						font-size: 16px;
+						font-weight: 700;
+					}
+				}
+			}
+
+			.slider-p {
+				margin-top: 30px;
+				color: #000000;
+				font-family: "Open Sans";
+				font-size: 13px;
+				font-weight: 400;
+			}
+
+		}
+	}
+}
+
+
+.button-howItWork {
+	text-align: center;
+	margin-bottom: 14px;
+}
