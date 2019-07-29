@@ -1,10 +1,15 @@
-let gulp = require('gulp');
-let browserSync = require('browser-sync');
-let sass = require('gulp-sass');
-let concatCss = require('gulp-concat-css');
+const gulp = require('gulp');
+const browserSync = require('browser-sync');
+const sass = require('gulp-sass');
+const concatCss = require('gulp-concat-css');
+const cleanCSS = require('gulp-clean-css');
+const minify = require('gulp-minify');
+const concat = require('gulp-concat');
+const clean = require('gulp-clean');
+
 
 // Static Server + watching scss/html files
-gulp.task('serve', ['sass'], function() {
+gulp.task('serve', ['sass'], () => {
  browserSync.init({
   server: "./src"
  });
@@ -14,12 +19,29 @@ gulp.task('serve', ['sass'], function() {
 });
 
 // Compile sass into CSS & auto-inject into browsers
-gulp.task('sass', function() {
+gulp.task('sass', () => {
  return gulp.src("src/scss/**/*.scss")
   .pipe(sass())
-  .pipe(concatCss("style.css"))
+  .pipe(concatCss("style.min.css"))
+  .pipe(cleanCSS({compatibility: 'ie8'}))
   .pipe(gulp.dest("src/css"))
   .pipe(browserSync.stream());
 });
 
-gulp.task('default', ['serve']);
+// Concat js
+gulp.task('compress', () => {
+  gulp.src(['src/js/*.js', 'src/js/*.mjs'])
+  	.pipe(concat('all.js'))
+    .pipe(minify())
+    .pipe(gulp.dest('dist/js'))
+});
+
+// Clean directiry
+gulp.task('clean', () => {
+    return gulp.src('dist/js', {read: false})
+    .pipe(clean());
+});
+
+gulp.task('default', ['clean'], () => {
+    gulp.start('serve', 'compress');
+});
